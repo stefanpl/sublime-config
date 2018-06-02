@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"ApacheConf",
+		"Autoprefixer",
+		"Better CoffeeScript",
+		"Better Less",
+		"Emmet",
+		"FileDiffs",
+		"Flexbox Snippets",
+		"Indent XML",
+		"JSON Reindent",
+		"JSONLint",
+		"LESS",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"PHP-Twig",
+		"Pug",
+		"Puppet",
+		"Sass",
+		"SassBeautify",
+		"SassSolution",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeERB",
+		"SublimeLinter",
+		"SublimeLinter-phplint",
+		"Theme - Piatto",
+		"Vintageous",
+		"Vue Syntax Highlight"
+	]
+}

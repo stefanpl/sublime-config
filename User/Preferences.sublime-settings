@@ -1,0 +1,68 @@
+{
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.gzip",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tbz2",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		"/home/stefan/webdev/cryptonow.io/frontend/dist/**",
+		"generated/*"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/Piatto Light (SL).tmTheme",
+	"detect_indentation": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"font_size": 16,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Vintageous"
+	],
+	"remember_open_files": false,
+	"smart_indent": false,
+	"tab_size": 2,
+	"theme": "Default.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?"
+}

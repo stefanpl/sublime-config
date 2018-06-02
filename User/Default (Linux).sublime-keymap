@@ -1,0 +1,44 @@
+[
+	{ "keys": ["ctrl+alt+i"], "command": "reindent" , "args": { "single_line": false } },
+	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+8"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+	{ "keys": ["alt+super+p"], "command": "autoprefixer" },
+	{ "keys": ["f12"], "command": "goto_definition" },
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+	{ "keys": ["ctrl+alt+l"], "command": "split_selection_into_lines" },
+	{ "keys": ["ctrl+shift+o"], "command": "file_diff_menu" },
+	{ "keys": ["ctrl+shift+."], "command": "erb" },
+    { "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{ "keys": ["shift+ctrl+space"], "command": "code_intel_auto_complete" },
+	{ "keys": ["shift+alt+n"], "command": "goto_python_definition"},
+	{ "keys": ["shift+alt+b"], "command": "back_to_python_definition"},
+    { "keys": ["alt+m"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["ctrl+e"], "command": "next_view_in_stack" },
+    {
+        "keys": [
+            "alt+shift+w"
+        ], 
+        "command": "wrap_as_you_type", 
+        "context": [
+            {
+                "operand": false, 
+                "operator": "equal", 
+                "match_all": true, 
+                "key": "setting.is_widget"
+            }, 
+            {
+                "match_all": true, 
+                "key": "emmet_action_enabled.wrap_as_you_type"
+            }
+        ]
+    },
+]

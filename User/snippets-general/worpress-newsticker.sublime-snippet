@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+
+<!-- ######################################################################### -->
+	<div class="newsticker">
+
+			<h3>Kreid0r newstick0r</h3>
+			<?php
+    $limit = 3;
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    query_posts('showposts=' . $limit . '&paged=' . $paged);
+    $wp_query->is_archive = true; $wp_query->is_home = true;
+    ?>   
+
+<?php if (have_posts()) : ?>
+		<?php while (have_posts()) : the_post();
+        	
+				?>
+				<div class="newsbox_item">
+				<header><h4><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h4></header>
+				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'pilotfish'), the_title_attribute('echo=0')); ?>">Weiterlesen ...</a><!-- Post Title -->
+				</div>
+        <?php endwhile; ?> 
+
+
+        <?php if ($wp_query->max_num_pages > 1) { ?>
+		  <nav id="post-nav" class="pager">
+		    <div class="previous"><?php next_posts_link(__('&larr; previous', 'pilotfish')); ?></div>
+		    <div class="next"><?php previous_posts_link(__('next &rarr;', 'pilotfish')); ?></div>
+		  </nav>
+		<?php } ?>
+<?php endif; ?>  
+
+<?php wp_reset_query(); ?>
+	</div>
+<!-- ######################################################################### -->
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ticker</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
