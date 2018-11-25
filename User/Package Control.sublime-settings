@@ -31,6 +31,9 @@
 		"SublimeLinter",
 		"SublimeLinter-phplint",
 		"Theme - Piatto",
+		"TypeScript",
+		"TypeScript Syntax",
+		"TypescriptCompletion",
 		"Vintageous",
 		"Vue Syntax Highlight"
 	]
